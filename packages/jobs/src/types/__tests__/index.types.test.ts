@@ -1,6 +1,6 @@
 import type { FuncEventType } from '@faasjs/core'
 import { z } from '@faasjs/utils'
-import { assertType, expectTypeOf, it } from 'vitest'
+import { assertType, expectTypeOf, it } from 'vite-plus/test'
 
 import type { DefineJobParams } from '..'
 import { defineJob } from '../../define-job'

@@ -1,6 +1,6 @@
 import { act, renderHook } from '@testing-library/react'
 import type { Dispatch, SetStateAction } from 'react'
-import { describe, expect, expectTypeOf, it, vi } from 'vitest'
+import { describe, expect, expectTypeOf, it, vi } from 'vite-plus/test'
 
 import * as ReactExports from '../..'
 import { createProxyStates, type ProxyStateRef } from '../../createProxyStates'

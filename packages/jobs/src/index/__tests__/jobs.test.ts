@@ -5,7 +5,7 @@ import { pathToFileURL } from 'node:url'
 
 import { Logger } from '@faasjs/node-utils'
 import { getClient, getClients, type Client } from '@faasjs/pg'
-import { afterAll, afterEach, beforeEach, describe, expect, it } from 'vitest'
+import { afterAll, afterEach, beforeEach, describe, expect, it } from 'vite-plus/test'
 
 import { getJobPathFromFile, loadJobRegistry } from '../../discovery'
 import { enqueueJob, JobScheduler, JobWorker, type JobRecord } from '../../index'

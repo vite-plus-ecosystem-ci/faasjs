@@ -1,7 +1,7 @@
 import { basename, dirname, extname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
-import type { Plugin } from 'vitest/config'
+import type { Plugin } from 'vite-plus'
 
 const moduleFilename = fileURLToPath(import.meta.url)
 const moduleDirname = dirname(moduleFilename)

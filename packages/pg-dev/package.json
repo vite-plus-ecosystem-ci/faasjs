@@ -39,7 +39,8 @@
     "@electric-sql/pglite": "*",
     "@electric-sql/pglite-socket": "*",
     "@faasjs/pg": ">=8.0.0-beta.43",
-    "postgres": "*"
+    "postgres": "*",
+    "vitest": "4.1.10"
   },
   "peerDependencies": {
     "@electric-sql/pglite": "*",
