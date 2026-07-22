@@ -13,6 +13,7 @@
     "@faasjs/types": "file:../../packages/types"
   },
   "devDependencies": {
-    "@faasjs/dev": "file:../../packages/dev"
+    "@faasjs/dev": "file:../../packages/dev",
+    "vitest": "4.1.10"
   }
 }

@@ -21,12 +21,14 @@
     "upgrade": "rm -rf packages/*/node_modules node_modules package-lock.json && npm install"
   },
   "devDependencies": {
-    "@vitest/coverage-v8": ">=4.1.10",
+    "@vitest/coverage-v8": "4.1.10",
     "typescript": ">=7.0.2",
-    "vite-plus": ">=0.2.5"
+    "vite-plus": "0.0.0-commit.9855245a469b178066c25a5d45c971c130565d89",
+    "vitest": "4.1.10"
   },
   "overrides": {
-    "vite": "npm:@voidzero-dev/vite-plus-core"
+    "vite": "npm:@voidzero-dev/vite-plus-core@0.0.0-commit.9855245a469b178066c25a5d45c971c130565d89",
+    "vitest": "4.1.10"
   },
   "engines": {
     "node": ">=26.0.0",
