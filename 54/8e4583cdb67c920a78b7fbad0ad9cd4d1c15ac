@@ -1,0 +1,31 @@
+package-lock.json
+  s_1740f4893f0bf6::t_3ed1b1c47200f8 19,338-340,362-364,379,413-415,3012-3014,3105-3107,3122-3124,3139-3141,3159-3161,3179-3181,3199-3201,3219-3221,3236-3238,5187-5189,6283-6285,6376-6378,6393,6409-6416,6786
+package.json
+  s_2503404dcac4e9::t_5e30e5adb2748a 26,30
+packages/dev/package.json
+  s_2503404dcac4e9::t_5596cfd8306732 46
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "548e4583cdb67c920a78b7fbad0ad9cd4d1c15ac",
+  "prompts": {},
+  "sessions": {
+    "s_1740f4893f0bf6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0734049fbffekQIlKU9BxVrge9",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "wan9chi <dk4rest@gmail.com>"
+    },
+    "s_2503404dcac4e9": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_073404bc3ffeRIRDs9j33fpyp8",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "wan9chi <dk4rest@gmail.com>"
+    }
+  }
+}
