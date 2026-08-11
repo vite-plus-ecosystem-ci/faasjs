@@ -1,5 +1,5 @@
 import type postgres from 'postgres'
-import { describe, it, expectTypeOf } from 'vitest'
+import { describe, it, expectTypeOf } from 'vite-plus/test'
 
 import type { User } from '../../../test-utils/tables'
 import { type DatabaseBootstrap } from '../../bootstrap'
