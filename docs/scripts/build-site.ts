@@ -12,7 +12,7 @@ import { fileURLToPath } from 'node:url'
 
 import { parseYaml, z } from '@faasjs/utils'
 import hljs from 'highlight.js'
-import MarkdownIt from 'markdown-it'
+import MarkdownIt, { type MarkdownIt as MarkdownItInstance } from 'markdown-it'
 import markdownItAnchor from 'markdown-it-anchor'
 
 import { prepareDocsSite } from '../../packages/docgen/src/index.ts'
@@ -331,7 +331,7 @@ function writeStaticAssets(): void {
   writeFileSync(join(distRoot, '.nojekyll'), '')
 }
 
-function createMarkdownRenderer(pageBySource: Map<string, Page>): MarkdownIt {
+function createMarkdownRenderer(pageBySource: Map<string, Page>): MarkdownItInstance {
   const markdown = new MarkdownIt({
     html: true,
     linkify: true,
@@ -359,7 +359,7 @@ function createMarkdownRenderer(pageBySource: Map<string, Page>): MarkdownIt {
     const hrefIndex = tokens[idx].attrIndex('href')
     if (hrefIndex >= 0 && tokens[idx].attrs) {
       const originalHref = tokens[idx].attrs[hrefIndex]?.[1]
-      if (originalHref && typeof env?.sourcePath === 'string') {
+      if (typeof originalHref === 'string' && typeof env?.sourcePath === 'string') {
         const rewritten = rewriteLink(originalHref, env.sourcePath, pageBySource)
         tokens[idx].attrs[hrefIndex][1] = rewritten
 
@@ -518,7 +518,7 @@ function renderSidebar(
 function renderAndWritePage(options: {
   page: Page
   titleByRoute: Map<string, string>
-  markdown: MarkdownIt
+  markdown: MarkdownItInstance
 }): void {
   const localeConfig = siteConfig.locales[options.page.locale]
   const { desktop: navbarHtml, mobile: mobileNavbarHtml } = renderNavbarPair(

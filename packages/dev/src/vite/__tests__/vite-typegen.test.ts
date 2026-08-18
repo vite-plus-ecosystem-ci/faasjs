@@ -101,7 +101,7 @@ describe('viteFaasJsServer typegen', () => {
 
     expect(mocks.generateFaasTypes).toHaveBeenCalledTimes(1)
     expect(mocks.generateFaasTypes).toHaveBeenCalledWith({
-      root,
+      root: server.config.root,
     })
 
     await server.close()

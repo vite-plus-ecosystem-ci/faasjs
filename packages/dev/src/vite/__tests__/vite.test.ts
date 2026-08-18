@@ -128,7 +128,7 @@ describe('viteFaasJsServer', () => {
     })
 
     expect(mocks.calls).toHaveLength(1)
-    expect(mocks.calls[0][0]).toBe(join(root, 'src'))
+    expect(mocks.calls[0][0]).toBe(join(server.config.root, 'src'))
 
     await server.close()
 
