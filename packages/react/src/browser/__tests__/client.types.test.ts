@@ -1,5 +1,5 @@
 import type { FaasActions } from '@faasjs/types'
-import { assertType, expect, it } from 'vitest'
+import { assertType, expect, it } from 'vite-plus/test'
 
 import type { Response as FaasResponse } from '../../browser'
 import { FaasBrowserClient } from '../../browser'
