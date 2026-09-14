@@ -1,4 +1,4 @@
-import { assertType, it } from 'vitest'
+import { assertType, it } from 'vite-plus/test'
 
 import type { useApp } from '../../useApp'
 import { type useAppProps } from '../../useApp'
