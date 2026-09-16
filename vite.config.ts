@@ -113,6 +113,7 @@ export default defineConfig({
   lint: OxlintConfig,
   pack,
   test: {
+    sharedViteServer: false,
     restoreMocks: true,
     clearMocks: true,
     coverage: {

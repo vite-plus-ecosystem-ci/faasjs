@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 
 import { Func, type InvokeData, type MountData, type Next, type Plugin } from '../..'
 
