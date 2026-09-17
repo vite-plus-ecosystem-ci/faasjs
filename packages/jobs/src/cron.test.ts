@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 
 import { cronMatches } from './cron'
 import { parseCronExpression, type CronMatcher } from './index'

@@ -40,10 +40,11 @@
     "@types/react": "*",
     "@types/react-dom": "*",
     "@vitejs/plugin-react": "*",
-    "@vitest/coverage-v8": "*",
+    "@vitest/coverage-v8": "4.1.11",
     "jsdom": "*",
     "typescript": "*",
-    "vite-plus": "*"
+    "vite-plus": "0.0.0-commit.fba044cf40fea5a7bf4a2ee97822f174eab33dfa",
+    "vitest": "4.1.11"
   },
   "peerDependencies": {
     "@faasjs/core": ">=8.0.0-beta.45",

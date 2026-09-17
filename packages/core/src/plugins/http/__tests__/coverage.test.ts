@@ -1,6 +1,6 @@
 import { Http } from '@faasjs/core'
 import { streamToString } from '@faasjs/utils'
-import { afterEach, describe, expect, it, vi } from 'vitest'
+import { afterEach, describe, expect, it, vi } from 'vite-plus/test'
 
 function createLogger() {
   return {
