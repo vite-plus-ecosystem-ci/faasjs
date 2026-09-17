@@ -5,7 +5,7 @@ import { pathToFileURL } from 'node:url'
 
 import { defineApi, type InvokeData, type Next, type Plugin } from '@faasjs/core'
 import { streamToObject, z } from '@faasjs/utils'
-import { afterEach, describe, expect, it } from 'vitest'
+import { afterEach, describe, expect, it } from 'vite-plus/test'
 
 import { loadPlugins } from '../load-plugins'
 

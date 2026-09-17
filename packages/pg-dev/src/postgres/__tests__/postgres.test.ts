@@ -1,4 +1,4 @@
-import { afterAll, afterEach, beforeAll, describe, expect, it } from 'vitest'
+import { afterAll, afterEach, beforeAll, describe, expect, it } from 'vite-plus/test'
 
 import { startPGliteServer, type StartedPGliteServer } from '../../pglite'
 import { createTestingPostgres } from '../../postgres'
