@@ -89,6 +89,7 @@ const pack: PackUserConfig[] = [
   },
   deps: {
     skipNodeModulesBundle: true,
+    neverBundle: ['dayjs'],
   },
   sourcemap: false,
   treeshake: true,
