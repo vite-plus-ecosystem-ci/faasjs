@@ -113,6 +113,10 @@ export default defineConfig({
   lint: OxlintConfig,
   pack,
   test: {
+    // Vitest v4 compatibility: keep separate Vite servers for inline projects.
+    // Remove when plugins and config hooks can run once for shared projects.
+    // https://vitest.dev/guide/migration/#inline-projects-share-the-vite-server-by-default
+    sharedViteServer: false,
     restoreMocks: true,
     clearMocks: true,
     coverage: {
