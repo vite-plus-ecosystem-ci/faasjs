@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import { Input } from 'antd'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 
 import { type ExtendFormItemProps, Form, type FormProps } from '../../Form'
 
