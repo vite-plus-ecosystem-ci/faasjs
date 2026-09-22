@@ -83,10 +83,13 @@ const pack: PackUserConfig[] = [
   ...(packEntries[p] ? { entry: packEntries[p] } : {}),
   format: ['esm'],
   clean: true,
-  dts: {
-    sourcemap: false,
-    eager: true,
-  },
+  dts:
+    p === 'ant-design'
+      ? false
+      : {
+          sourcemap: false,
+          eager: true,
+        },
   deps: {
     skipNodeModulesBundle: true,
   },
