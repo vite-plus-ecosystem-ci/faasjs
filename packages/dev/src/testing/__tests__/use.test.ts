@@ -1,5 +1,5 @@
 import { ApiTester } from '@faasjs/dev'
-import { expect, it } from 'vitest'
+import { expect, it } from 'vite-plus/test'
 
 import useAApi from './apis/use-a.api'
 import useBApi from './apis/use-b.api'
