@@ -77,7 +77,7 @@ const pack: PackUserConfig[] = [
   'utils',
   'node-utils',
   'react',
-].map((p) => ({
+].map((p): PackUserConfig => ({
   platform: ['react', 'ant-design', 'utils'].includes(p) ? 'browser' : 'node',
   cwd: join(process.cwd(), 'packages', p),
   ...(packEntries[p] ? { entry: packEntries[p] } : {}),
@@ -91,7 +91,7 @@ const pack: PackUserConfig[] = [
           eager: true,
         },
   deps: {
-    skipNodeModulesBundle: true,
+    neverBundle: true,
   },
   sourcemap: false,
   treeshake: true,
@@ -113,7 +113,19 @@ export default defineConfig({
     tsconfigPaths: true,
   },
   fmt: OxfmtConfig,
-  lint: OxlintConfig,
+  lint: {
+    ...OxlintConfig,
+    ignorePatterns: [
+      ...(OxlintConfig.ignorePatterns ?? []),
+      'packages/create-faas-app/template/**',
+    ],
+    rules: {
+      ...OxlintConfig.rules,
+      'react/globals': 'off',
+      'react/refs': 'off',
+      'react/set-state-in-effect': 'off',
+    },
+  },
   pack,
   test: {
     // Vitest v4 compatibility: keep separate Vite servers for inline projects.
