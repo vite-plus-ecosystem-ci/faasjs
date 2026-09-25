@@ -1,6 +1,6 @@
 import { setMock } from '@faasjs/react'
 import { render, screen } from '@testing-library/react'
-import { beforeEach, describe, expect, it } from 'vitest'
+import { beforeEach, describe, expect, it } from 'vite-plus/test'
 
 import { Description } from '../../Description'
 
