@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeAll, afterAll, expectTypeOf } from 'vitest'
+import { describe, it, expect, beforeAll, afterAll, expectTypeOf } from 'vite-plus/test'
 
 import type { User } from '../../../test-utils/tables'
 import { type Client, createClient } from '../../client'
