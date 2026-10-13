@@ -1,6 +1,6 @@
 import { act, renderHook } from '@testing-library/react'
 import type { Dispatch, RefObject, SetStateAction } from 'react'
-import { assertType, describe, expect, it } from 'vitest'
+import { assertType, describe, expect, it } from 'vite-plus/test'
 
 import { useStates, useStatesRef } from '../../useStates'
 

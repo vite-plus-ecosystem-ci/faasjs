@@ -1,6 +1,6 @@
 import { defineApi, Func } from '@faasjs/core'
 import { z } from '@faasjs/utils'
-import { assertType, expect, it } from 'vitest'
+import { assertType, expect, it } from 'vite-plus/test'
 
 import { type Cookie, type FuncEventType, type FuncReturnType, type Session } from '../../index'
 

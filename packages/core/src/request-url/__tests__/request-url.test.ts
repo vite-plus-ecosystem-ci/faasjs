@@ -1,6 +1,6 @@
 import type { IncomingMessage } from 'node:http'
 
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 
 import { BAD_REQUEST_URL_MESSAGE, ensureRequestUrl } from '..'
 import { createMockRes } from '../../server/mocks'

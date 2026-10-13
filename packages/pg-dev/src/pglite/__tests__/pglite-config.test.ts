@@ -1,4 +1,4 @@
-import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vite-plus/test'
 
 describe('pglite max connections', () => {
   const originalPoolMax = process.env.PG_POOL_MAX
