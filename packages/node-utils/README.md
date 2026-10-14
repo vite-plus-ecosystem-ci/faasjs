@@ -19,8 +19,8 @@ npm install @faasjs/node-utils
 ## Usage
 
 ```ts
-import { z } from '@faasjs/utils'
 import { Logger, loadConfig, parseSchemaValue } from '@faasjs/node-utils'
+import { z } from '@faasjs/utils'
 
 const logger = new Logger('app')
 const config = loadConfig(process.cwd(), '/project/src/hello.api.ts', 'development')
