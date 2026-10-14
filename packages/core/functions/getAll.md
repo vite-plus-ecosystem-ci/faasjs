@@ -18,6 +18,7 @@ Server instances tracked by the current process.
 
 ```ts
 import { join } from 'node:path'
+
 import { Server, getAll } from '@faasjs/core'
 
 const server = new Server(join(process.cwd(), 'src'))

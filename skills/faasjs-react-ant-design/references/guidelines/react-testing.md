@@ -39,9 +39,8 @@ In this guide, "UI tests" means tests routed to the Vitest `ui` project with `en
 Vitest setup example:
 
 ```ts
-import { afterEach } from 'vitest'
-
 import { setMock } from '@faasjs/react'
+import { afterEach } from 'vitest'
 
 afterEach(() => {
   setMock(null)
@@ -143,8 +142,8 @@ setMock(async (path, params) => {
 Streaming example:
 
 ```ts
-import { stringToStream } from '@faasjs/utils'
 import { setMock } from '@faasjs/react'
+import { stringToStream } from '@faasjs/utils'
 
 setMock({
   body: stringToStream('hello world'),
@@ -167,10 +166,9 @@ setMock({
 Example:
 
 ```tsx
+import { setMock, useFaas } from '@faasjs/react'
 import { render, screen } from '@testing-library/react'
 import { beforeEach, describe, expect, it } from 'vitest'
-
-import { setMock, useFaas } from '@faasjs/react'
 
 function UserName() {
   const { data } = useFaas<{ name: string }>('features/users/api/get', {})
@@ -204,10 +202,9 @@ describe('UserName', () => {
 Example:
 
 ```tsx
+import { setMock, useFaas } from '@faasjs/react'
 import { renderHook, waitFor } from '@testing-library/react'
 import { beforeEach, describe, expect, it } from 'vitest'
-
-import { setMock, useFaas } from '@faasjs/react'
 
 describe('useFaas', () => {
   beforeEach(() => {
