@@ -26,3 +26,4 @@ junit.xml
 *.sqlite3
 *.junit.xml
 .npmrc
+.vitest/

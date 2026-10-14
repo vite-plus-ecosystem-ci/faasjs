@@ -1,7 +1,7 @@
 import { basename, dirname, extname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
-import type { Plugin } from 'vitest/config'
+import type { Plugin } from 'vite-plus'
 
 import { PG_VITEST_SNAPSHOT_DIR_CONTEXT_KEY } from '../plugin-context'
 

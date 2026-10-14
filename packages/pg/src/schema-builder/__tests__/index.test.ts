@@ -1,4 +1,4 @@
-import { afterAll, beforeEach, describe, expect, it } from 'vitest'
+import { afterAll, beforeEach, describe, expect, it } from 'vite-plus/test'
 
 import { SchemaBuilder } from '../..'
 import { type Client, createClient } from '../../client'
