@@ -52,9 +52,9 @@ export default defineConfig({
 ## Minimal Example
 
 ```ts
+import { PgVitestPlugin } from '@faasjs/pg-dev'
 // vitest.config.ts
 import { defineConfig } from 'vitest/config'
-import { PgVitestPlugin } from '@faasjs/pg-dev'
 
 export default defineConfig({
   plugins: [PgVitestPlugin()],
@@ -62,9 +62,8 @@ export default defineConfig({
 ```
 
 ```ts
-import { describe, expect, it } from 'vitest'
-
 import { getClient } from '@faasjs/pg'
+import { describe, expect, it } from 'vitest'
 
 async function seedUser() {
   const client = await getClient()

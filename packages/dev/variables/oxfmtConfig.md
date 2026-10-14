@@ -16,8 +16,8 @@ by spreading additional `fmt` options. Generated output under `dist/`,
 ## Example
 
 ```ts
-import { defineConfig } from 'vite-plus'
 import { OxfmtConfig } from '@faasjs/dev'
+import { defineConfig } from 'vite-plus'
 
 export default defineConfig({
   fmt: OxfmtConfig,
