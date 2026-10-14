@@ -88,7 +88,7 @@ const pack: PackUserConfig[] = [
     eager: true,
   },
   deps: {
-    skipNodeModulesBundle: true,
+    neverBundle: true,
   },
   sourcemap: false,
   treeshake: true,
