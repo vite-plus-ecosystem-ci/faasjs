@@ -32,6 +32,7 @@ describe('PgVitestPlugin', () => {
     }
 
     plugin.configureVitest?.({
+      defineCacheKeyGenerator() {},
       experimental_defineCacheKeyGenerator() {},
       injectTestProjects: async () => [],
       project: project as never,
@@ -56,12 +57,14 @@ describe('PgVitestPlugin', () => {
     }
 
     plugin.configureVitest?.({
+      defineCacheKeyGenerator() {},
       experimental_defineCacheKeyGenerator() {},
       injectTestProjects: async () => [],
       project: project as never,
       vitest: {} as never,
     })
     plugin.configureVitest?.({
+      defineCacheKeyGenerator() {},
       experimental_defineCacheKeyGenerator() {},
       injectTestProjects: async () => [],
       project: project as never,
@@ -87,6 +90,7 @@ describe('PgVitestPlugin', () => {
     }
 
     plugin.configureVitest?.({
+      defineCacheKeyGenerator() {},
       experimental_defineCacheKeyGenerator() {},
       injectTestProjects: async () => [],
       project: project as never,
@@ -109,6 +113,7 @@ describe('PgVitestPlugin', () => {
     }
 
     plugin.configureVitest?.({
+      defineCacheKeyGenerator() {},
       experimental_defineCacheKeyGenerator() {},
       injectTestProjects: async () => [],
       project: project as never,
