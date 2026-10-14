@@ -35,6 +35,7 @@ when inference succeeds, otherwise `never`.
 
 ```ts
 import type { InferFaasAction } from '@faasjs/types'
+
 import type * as loginApi from './user/login.api'
 
 type LoginAction = InferFaasAction<typeof loginApi>

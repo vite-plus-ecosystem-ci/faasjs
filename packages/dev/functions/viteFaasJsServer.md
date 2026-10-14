@@ -25,9 +25,9 @@ Vite plugin instance for local FaasJS development.
 ## Example
 
 ```ts
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
 import { viteFaasJsServer } from '@faasjs/dev'
+import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite'
 
 export default defineConfig({
   plugins: [react(), viteFaasJsServer()],

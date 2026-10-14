@@ -15,6 +15,7 @@ route traversal, and skips test-only route files.
 
 ```ts
 import { join } from 'node:path'
+
 import { Server } from '@faasjs/core'
 
 const server = new Server(join(process.cwd(), 'src'), {

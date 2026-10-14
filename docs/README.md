@@ -123,6 +123,7 @@ export default defineApi({
 // TSX-based UI tests should use .test.tsx
 // UI tests without TSX should use .ui.test.ts
 import { testApi } from '@faasjs/dev'
+
 import api from '../index.api'
 
 describe('index', function () {
