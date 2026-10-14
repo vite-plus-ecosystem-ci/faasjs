@@ -25,6 +25,7 @@ An object containing the job params type, or `never` when inference fails.
 
 ```ts
 import type { InferFaasJob } from '@faasjs/types'
+
 import type * as syncJob from './features/users/jobs/sync.job'
 
 type SyncJob = InferFaasJob<typeof syncJob>

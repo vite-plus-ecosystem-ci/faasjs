@@ -19,6 +19,7 @@ conventions such as `index.api.ts`, `default.api.ts`, and nested `*.api.ts` file
 
 ```ts
 import { ApiTester } from '@faasjs/dev'
+
 import api from './hello.api'
 
 const wrapped = new ApiTester(api)
@@ -58,6 +59,7 @@ API instance to wrap.
 
 ```ts
 import { ApiTester } from '@faasjs/dev'
+
 import api from './hello.api'
 
 const wrapped = new ApiTester(api)
@@ -151,6 +153,7 @@ When the wrapped API does not use the HTTP plugin.
 
 ```ts
 import { testApi } from '@faasjs/dev'
+
 import api from './hello.api'
 
 const handler = testApi(api)
