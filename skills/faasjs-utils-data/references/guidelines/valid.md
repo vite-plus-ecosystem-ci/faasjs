@@ -87,8 +87,9 @@ It normalizes both paths, follows existing symlinks with `realpath`, and still h
 Resolve the candidate path first, then validate that resolved path against the intended root.
 
 ```ts
-import { isPathInsideRoot } from '@faasjs/node-utils'
 import { resolve } from 'node:path'
+
+import { isPathInsideRoot } from '@faasjs/node-utils'
 
 const root = resolve(process.cwd(), 'public')
 const candidate = resolve(root, requestPath)

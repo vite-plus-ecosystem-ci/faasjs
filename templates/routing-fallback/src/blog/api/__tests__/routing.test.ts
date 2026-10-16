@@ -7,7 +7,7 @@ import { afterAll, beforeAll, describe, expect, it } from 'vite-plus/test'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 
-describe.sequential('routing fallback', () => {
+describe('routing fallback', { concurrent: false }, () => {
   const poolId = Number(process.env.VITEST_POOL_ID || 0)
   const port = 31320 + poolId
 
