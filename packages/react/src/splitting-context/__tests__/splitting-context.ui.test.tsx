@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { useState } from 'react'
-import { assertType, describe, expect, it } from 'vitest'
+import { assertType, describe, expect, it } from 'vite-plus/test'
 
 import { createSplittingContext } from '../../splitting-context'
 

@@ -1,6 +1,6 @@
 import { fireEvent, render, screen, waitFor } from '@testing-library/react'
 import dayjs from 'dayjs'
-import { describe, expect, it, vi } from 'vitest'
+import { describe, expect, it, vi } from 'vite-plus/test'
 
 import { createTableColumns } from '../column-builder'
 import { FaasDataTable, Table } from '../table'

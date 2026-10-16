@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeAll, afterAll, beforeEach } from 'vitest'
+import { describe, it, expect, beforeAll, afterAll, beforeEach } from 'vite-plus/test'
 
 import { type Client, createClient } from '../../client'
 import { QueryBuilder } from '../../query-builder'
