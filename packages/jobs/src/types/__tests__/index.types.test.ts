@@ -2,7 +2,7 @@ import type { FuncEventType } from '@faasjs/core'
 import type { Client } from '@faasjs/pg'
 import type { InferFaasJob } from '@faasjs/types'
 import { z } from '@faasjs/utils'
-import { assertType, expectTypeOf, it } from 'vitest'
+import { assertType, expectTypeOf, it } from 'vite-plus/test'
 
 import type { DefineJobParams, JobRecord } from '..'
 import { defineJob } from '../../define-job'

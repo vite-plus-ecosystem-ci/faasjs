@@ -1,6 +1,6 @@
 import { Http, defineApi, type FuncRuntime } from '@faasjs/core'
 import { streamToObject, z } from '@faasjs/utils'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 
 import { TestsAuthPlugin } from './auth-plugin'
 
