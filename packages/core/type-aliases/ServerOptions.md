@@ -22,6 +22,7 @@ Write to the response to short-circuit normal request handling.
 
 ```ts
 import { join } from 'node:path'
+
 import { Server } from '@faasjs/core'
 
 const server = new Server(join(process.cwd(), 'src'), {
@@ -63,6 +64,7 @@ Promise returned by the close hook.
 
 ```ts
 import { join } from 'node:path'
+
 import { Server } from '@faasjs/core'
 
 const server = new Server(join(process.cwd(), 'src'), {
@@ -108,6 +110,7 @@ Promise returned by the error hook.
 
 ```ts
 import { join } from 'node:path'
+
 import { Server } from '@faasjs/core'
 
 const server = new Server(join(process.cwd(), 'src'), {
@@ -147,6 +150,7 @@ Promise returned by the start hook.
 
 ```ts
 import { join } from 'node:path'
+
 import { Server } from '@faasjs/core'
 
 const server = new Server(join(process.cwd(), 'src'), {

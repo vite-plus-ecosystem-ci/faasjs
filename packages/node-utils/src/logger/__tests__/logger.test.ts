@@ -1,4 +1,4 @@
-import { describe, expect, it, vi } from 'vitest'
+import { describe, expect, it, vi } from 'vite-plus/test'
 
 import { Color } from '../../color'
 import { type Level, formatLogger, Logger } from '../../logger'

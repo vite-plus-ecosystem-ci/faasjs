@@ -13,7 +13,7 @@ import { join } from 'node:path'
 import { Readable } from 'node:stream'
 
 import { Logger } from '@faasjs/node-utils'
-import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vite-plus/test'
 
 import { createClient, getClients, type Client } from '../../client'
 import { main } from '../main'
