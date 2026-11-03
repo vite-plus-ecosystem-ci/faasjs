@@ -1,6 +1,6 @@
 import { Func } from '@faasjs/core'
 import { ApiTester } from '@faasjs/dev'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 
 describe('init by api', () => {
   it('200', async () => {

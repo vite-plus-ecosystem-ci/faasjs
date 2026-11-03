@@ -2,7 +2,7 @@ import { setMock } from '@faasjs/react'
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { useEffect } from 'react'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 
 import { App } from '../../App'
 import { useFaas } from '../../FaasDataWrapper'
