@@ -1,4 +1,4 @@
-import { describe, expect, expectTypeOf, it } from 'vitest'
+import { describe, expect, expectTypeOf, it } from 'vite-plus/test'
 
 import { parseJson, parseArrayFromJson, parseObjectFromJson } from '..'
 import { z } from '../../zod'
