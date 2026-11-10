@@ -13,11 +13,13 @@ import {
  * @template T - Object shape whose keys receive generated setter functions.
  */
 export type StateSetters<T> = {
-  [K in keyof T as K extends string
-    ? K extends `${infer First}${infer Rest}`
-      ? `set${Capitalize<First>}${Rest}`
+  [
+    K in keyof T as K extends string
+      ? K extends `${infer First}${infer Rest}`
+        ? `set${Capitalize<First>}${Rest}`
+        : never
       : never
-    : never]: Dispatch<SetStateAction<T[K]>>
+  ]: Dispatch<SetStateAction<T[K]>>
 }
 
 /**

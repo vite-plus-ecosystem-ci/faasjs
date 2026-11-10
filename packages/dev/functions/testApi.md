@@ -43,6 +43,7 @@ Callable JSON test helper with bound tester methods attached.
 
 ```ts
 import { testApi } from '@faasjs/dev'
+
 import api from './hello.api'
 
 const handler = testApi(api)
