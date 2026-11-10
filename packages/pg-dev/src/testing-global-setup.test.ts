@@ -2,7 +2,7 @@ import { access, mkdtemp, rm } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 
-import { afterEach, describe, expect, it, vi } from 'vitest'
+import { afterEach, describe, expect, it, vi } from 'vite-plus/test'
 
 import { PG_VITEST_SNAPSHOT_DIR_CONTEXT_KEY } from './plugin-context'
 import setupPgVitestGlobal from './testing-global-setup'

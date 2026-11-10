@@ -1,6 +1,6 @@
 import { availableParallelism } from 'node:os'
 
-import type { TestProject } from 'vitest/node'
+import type { TestProject } from 'vite-plus/test/node'
 
 function getAvailableWorkerCount() {
   return availableParallelism()
