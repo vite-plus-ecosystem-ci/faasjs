@@ -72,8 +72,8 @@ Actions map directly to:
 Feature entry files should focus on composing existing components and triggering shared app interactions through `useApp`:
 
 ```tsx
-import { Button, Space } from 'antd'
 import { useApp } from '@faasjs/ant-design'
+import { Button, Space } from 'antd'
 
 import { UserForm } from './components/UserForm'
 import { UserTable } from './components/UserTable'
@@ -113,8 +113,8 @@ For most CRUD feature UI:
 - Reuse `items` across list, detail, and form.
 
 ```tsx
-import { Button, Space } from 'antd'
 import { faas, Table, useApp } from '@faasjs/ant-design'
+import { Button, Space } from 'antd'
 
 import { useUserItems } from '../hooks/useUserItems'
 import { UserDescription } from './UserDescription'
@@ -301,8 +301,8 @@ A hidden item renders as a hidden form input instead of being treated as deleted
 - Use `message` for short success feedback and `notification` for more complete failure feedback.
 
 ```tsx
-import { Button } from 'antd'
 import { faas, useApp } from '@faasjs/ant-design'
+import { Button } from 'antd'
 
 export function RemoveButton(props: { id: number }) {
   const { message, notification, setModalProps } = useApp()
@@ -464,8 +464,8 @@ export function Section() {
 Use only for intentionally isolated local instances outside the shared `App` shell. In regular feature UI, prefer `useApp().setModalProps(...)` and `useApp().setDrawerProps(...)`.
 
 ```tsx
-import { Button } from 'antd'
 import { useDrawer } from '@faasjs/ant-design'
+import { Button } from 'antd'
 
 export function LocalPreview() {
   const { drawer, setDrawerProps } = useDrawer()

@@ -22,11 +22,11 @@ Base URL override for the current request; it also selects the registered React 
 ### beforeRequest?
 
 > `optional` **beforeRequest?**: (`{
-    action,
-    params,
-    options,
-    headers,
-  }`) => `Promise`\<`void`>>>>\>
+>     action,
+>     params,
+>     options,
+>     headers,
+>   }`) => `Promise`\<`void`>>>>\>
 
 Async hook called after default and per-request options are merged, but before
 mock resolution or the final network/custom request dispatch.

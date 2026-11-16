@@ -45,8 +45,8 @@ The `items` array is the single source of truth for business fields across `Form
 Define items in a `use<Feature>Items` hook so they stay colocated and reusable.
 
 ```tsx
-import { useConstant } from '@faasjs/react'
 import type { FormItem, TableItem, DescriptionItem } from '@faasjs/ant-design'
+import { useConstant } from '@faasjs/react'
 
 export type UserField = {
   id: number
@@ -103,8 +103,8 @@ export function useUserItems() {
 Use the `Table` `faasData` prop for server-driven list fetches. Add search/filter controls in a row above the table and an actions column for detail/edit/delete.
 
 ```tsx
-import { useStates } from '@faasjs/react'
 import { Table, Title, useApp } from '@faasjs/ant-design'
+import { useStates } from '@faasjs/react'
 import { Input, Button, Space } from 'antd'
 
 import { UserActions } from './components/UserActions'
@@ -409,8 +409,8 @@ export default defineApi({
 Use a modal confirmation for destructive actions. Call `faas` imperatively in the `onOk` handler.
 
 ```tsx
-import { Button, Space } from 'antd'
 import { faas, useApp } from '@faasjs/ant-design'
+import { Button, Space } from 'antd'
 
 export function UserActions(props: { row: { id: number }; onSuccess?: () => void }) {
   const { message, notification, setModalProps } = useApp()
@@ -540,10 +540,10 @@ import { testApi } from '@faasjs/dev'
 import { describe, expect, it } from 'vitest'
 
 import createApi from '../create.api'
-import listApi from '../list.api'
 import detailApi from '../detail.api'
-import updateApi from '../update.api'
+import listApi from '../list.api'
 import removeApi from '../remove.api'
+import updateApi from '../update.api'
 
 describe('users/api/create', () => {
   const handler = testApi(createApi)

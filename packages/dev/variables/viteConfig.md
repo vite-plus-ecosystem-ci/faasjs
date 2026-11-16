@@ -56,8 +56,8 @@ Runs `vp check --fix` for staged files.
 ## Examples
 
 ```ts
-import { defineConfig } from 'vite-plus'
 import { ViteConfig } from '@faasjs/dev'
+import { defineConfig } from 'vite-plus'
 
 export default defineConfig({
   ...ViteConfig,
@@ -65,8 +65,8 @@ export default defineConfig({
 ```
 
 ```ts
-import { defineConfig } from 'vite-plus'
 import { ViteConfig } from '@faasjs/dev'
+import { defineConfig } from 'vite-plus'
 
 export default defineConfig({
   ...ViteConfig,

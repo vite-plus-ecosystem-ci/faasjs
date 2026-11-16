@@ -19,8 +19,8 @@ Generated output under `dist/`, `.faasjs/`, and `node_modules/` is ignored by de
 ## Example
 
 ```ts
-import { defineConfig } from 'vite-plus'
 import { OxlintConfig } from '@faasjs/dev'
+import { defineConfig } from 'vite-plus'
 
 export default defineConfig({
   lint: OxlintConfig,
