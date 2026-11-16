@@ -87,6 +87,7 @@ console.log(config.plugins?.http)
 
 ```ts
 import { loadEnvFile } from 'node:process'
+
 import { loadApiHandler } from '@faasjs/node-utils'
 
 loadEnvFile()

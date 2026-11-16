@@ -34,9 +34,9 @@ Wrapper props including loading fallbacks and request configuration.
 ## Example
 
 ```tsx
-import { Alert, Button } from 'antd'
 import { FaasDataWrapper } from '@faasjs/ant-design'
 import type { FaasDataInjection } from '@faasjs/ant-design'
+import { Alert, Button } from 'antd'
 
 declare module '@faasjs/types' {
   interface FaasActions {

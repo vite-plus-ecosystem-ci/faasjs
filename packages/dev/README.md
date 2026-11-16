@@ -60,6 +60,7 @@ await generateFaasTypes()
 
 ```ts
 import { testApi } from '@faasjs/dev'
+
 import api from '../demo.api'
 
 const handler = testApi(api)
