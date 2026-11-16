@@ -3,7 +3,7 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { setTimeout as delay } from 'node:timers/promises'
 
-import { expect, it } from 'vitest'
+import { expect, it } from 'vite-plus/test'
 
 import { resolvePgVitestWorkerId } from '../../../../plugin-context'
 import { createFixturePostgres, requireFixtureDatabaseUrl } from '../shared'

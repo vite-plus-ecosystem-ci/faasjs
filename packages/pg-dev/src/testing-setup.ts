@@ -1,4 +1,4 @@
-import { afterAll } from 'vitest'
+import { afterAll } from 'vite-plus/test'
 
 import { startPGliteServer } from './pglite'
 

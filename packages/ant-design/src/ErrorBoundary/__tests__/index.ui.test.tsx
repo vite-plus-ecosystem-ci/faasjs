@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import type { JSX } from 'react'
-import { describe, expect, it, vi } from 'vitest'
+import { describe, expect, it, vi } from 'vite-plus/test'
 
 import { ErrorBoundary } from '../../ErrorBoundary'
 
