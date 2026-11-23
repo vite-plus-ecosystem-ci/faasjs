@@ -1,6 +1,6 @@
 import { ApiTester } from '@faasjs/dev'
 import { streamToObject } from '@faasjs/utils'
-import { expect, it } from 'vitest'
+import { expect, it } from 'vite-plus/test'
 
 import errorStreamApi from './apis/error-stream.api'
 import httpErrorApi from './apis/http-error.api'

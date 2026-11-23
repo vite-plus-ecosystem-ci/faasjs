@@ -1,7 +1,7 @@
 import { setMock } from '@faasjs/react'
 import { render, screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
-import { describe, expect, it, vi } from 'vitest'
+import { describe, expect, it, vi } from 'vite-plus/test'
 
 import { Table } from '../../Table'
 

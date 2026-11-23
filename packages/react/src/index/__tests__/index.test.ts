@@ -1,4 +1,4 @@
-import { afterEach, describe, expect, it } from 'vitest'
+import { afterEach, describe, expect, it } from 'vite-plus/test'
 
 import { Response, setMock } from '../../index'
 import { FaasReactClient, getClient } from '../../index'

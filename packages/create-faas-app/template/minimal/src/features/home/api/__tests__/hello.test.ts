@@ -1,5 +1,5 @@
 import { testApi } from '@faasjs/dev'
-import { describe, it, expect } from 'vitest'
+import { describe, it, expect } from 'vite-plus/test'
 
 import api from '../hello.api'
 

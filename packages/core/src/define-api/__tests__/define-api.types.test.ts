@@ -6,7 +6,7 @@ import type {
 } from '@faasjs/core'
 import { defineApi } from '@faasjs/core'
 import { z } from '@faasjs/utils'
-import { assertType, expect, it } from 'vitest'
+import { assertType, expect, it } from 'vite-plus/test'
 
 type CurrentUser = {
   id: number
